@@ -20,6 +20,7 @@ function Detail() {
       <img src={info.large_cover_image}></img>
       <h1>{info.title}</h1>
       <p>{info.description_full}</p>
+      <div></div>
     </div>
   );
 }
