@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 function Detail() {
   const { id } = useParams();
+  console.log(id);
   const [info, setInfo] = useState({});
   const getMovie = async () => {
     const json = await (
@@ -13,7 +14,7 @@ function Detail() {
 
   useEffect(() => {
     getMovie();
-  });
+  }, []);
 
   return (
     <div>
